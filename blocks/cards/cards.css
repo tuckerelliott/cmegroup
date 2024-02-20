@@ -8,8 +8,22 @@
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3);
+  height: 23.75rem;
+  width: 18.75rem;
+}
+
+.cards.small > ul > li {
+  background-color: var(--background-color);
+  box-shadow: 0 0.0625rem 0.125rem 0 rgba(60,64,67,.3);
+  height: 10rem;
+  width: 18.75rem;
+}
+
+.cards.small > ul > li div:last-child {
+  position: absolute;
+  font-size: .75rem;
 }
 
 .cards .cards-card-body {
@@ -28,4 +42,8 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards a.button:any-link, button {
+all: none;
 }
