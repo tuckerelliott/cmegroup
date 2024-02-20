@@ -45,5 +45,5 @@
 }
 
 .cards a.button:any-link, button {
-all: none;
+all: unset;
 }
